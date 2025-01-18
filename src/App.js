@@ -4,6 +4,7 @@ import { UserProvider, useUser } from "./context/UserContext";
 import { AuthProvider } from "./context/AuthContext";
 import Home from "./components/Home";
 import Login from "./components/Login";
+import UseEffectHook from "./use-effect-basics/UseEffectHook";
 
 function UserProfile() {
   const { user, setUser } = useUser();
@@ -33,6 +34,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/login" element={<Login />} />
+          <Route path="/use-effect" element={<UseEffectHook />} />
         </Routes>
       </Router>
     </div>
